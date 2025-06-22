@@ -15,6 +15,6 @@ int main()
   townDistance = tankSize * townMileage;
   highwayDistance = tankSize * highwayMileage;
 // Print the results to the console.
-  cout << "With a full " << tankSize << "-gallon tank, the car can travel " << townDistance << " miles in town." << endl;
-  cout << "With a full " << tankSize << "-gallon tank, the car can travel " << highwayDistance << " miles on the highway." << endl;
+  cout << "With one full " << tankSize << "-gallon tank, the car can travel " << townDistance << " miles in town." << endl;
+  cout << "With one full " << tankSize << "-gallon tank, the car can travel " << highwayDistance << " miles on the highway." << endl;
 }
