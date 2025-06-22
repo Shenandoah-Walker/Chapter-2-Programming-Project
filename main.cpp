@@ -1,19 +1,20 @@
+//Distance per Tank of Gas program
+
 #include <iostream>
 using namespace std;
 
 int main() 
 {
-  double rateOfIncrease = 1.5;
-  double years1 = 5, years2 = 7, years3 = 10;
-  double levelChange1, levelChange2, levelChange3;
-
-  levelChange1 = rateOfIncrease * years1;
-  levelChange2 = rateOfIncrease * years2;
-  levelChange3 = rateOfIncrease * years3;
-
-  cout << "In " <<  years1 << " years, the ocean's level will be "<< levelChange1 << " millimeters higher than the current level." << endl;
-  cout << "In " <<  years2 << " years, the ocean's level will be "<< levelChange2 << " millimeters higher than the current level." << endl;
-  cout << "In " <<  years3 << " years, the ocean's level will be "<< levelChange3 << " millimeters higher than the current level." << endl;
-
-  return 0;
+  /* Declare variables for tank size, average miles per gallon when driven in town or on the highway (resectively), and the distance that can be driven in town or on the highway (respectively). */
+  double tankSize, townMileage, highwayMileage, townDistance, highwayDistance; 
+  
+// Assign values to the variables.
+  tankSize = 20;
+  townMileage = 23.5;
+  highwayMileage = 28.9;
+  townDistance = tankSize * townMileage;
+  highwayDistance = tankSize * highwayMileage;
+// Print the results to the console.
+  cout << "With a full " << tankSize << "-gallon tank, the car can travel " << townDistance << " miles in town." << endl;
+  cout << "With a full " << tankSize << "-gallon tank, the car can travel " << highwayDistance << " miles on the highway." << endl;
 }
